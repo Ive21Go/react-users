@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+    <!-- Clipping mask for circular avatar -->
+    <defs>
+        <clipPath id="circle-clip">
+            <circle cx="100" cy="100" r="100"/>
+        </clipPath>
+    </defs>
+    
+    <!-- Background circle -->
+    <circle cx="100" cy="100" r="100" fill="#e2ecf7"/>
+    
+    <!-- All content clipped to circle -->
+    <g clip-path="url(#circle-clip)">
+        <!-- Face -->
+        <circle cx="100" cy="85" r="35" fill="#f2c2a0"/>
+        
+        <!-- Hair -->
+        <path d="M70 55 Q100 45 130 55 Q135 65 130 75 Q125 50 100 50 Q75 50 70 75 Q65 65 70 55" fill="#654321"/>
+        
+        <!-- Eyes -->
+        <circle cx="90" cy="80" r="3" fill="#333"/>
+        <circle cx="110" cy="80" r="3" fill="#333"/>
+        
+        <!-- Eyebrows -->
+        <path d="M85 75 L95 73" stroke="#654321" stroke-width="2" stroke-linecap="round"/>
+        <path d="M105 73 L115 75" stroke="#654321" stroke-width="2" stroke-linecap="round"/>
+        
+        <!-- Nose -->
+        <ellipse cx="100" cy="90" rx="2" ry="4" fill="#e6a080"/>
+        
+        <!-- Mouth -->
+        <path d="M95 100 Q100 105 105 100" stroke="#b8860b" stroke-width="2" fill="none" stroke-linecap="round"/>
+        
+        <!-- Beard/Mustache -->
+        <ellipse cx="100" cy="105" rx="8" ry="3" fill="#654321"/>
+        <ellipse cx="100" cy="95" rx="6" ry="2" fill="#654321"/>
+        
+        <!-- Body/Shoulders -->
+        <path d="M30 150 Q70 140 100 145 Q130 140 170 150 L170 200 L30 200 Z" fill="#4a90e2"/>
+    </g>
+</svg>
