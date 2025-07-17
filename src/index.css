@@ -44,18 +44,18 @@ html, body {
 }
 
 #root {
+  background-color: #f5f5f5;
     height: 100vh;
     overflow: hidden;
 }
 /* Contact Card styles */
 .contact-card {
-  background-color: var(--san-marino-900);
+  background-color: #21a0a0;
   border-radius: 12px;
   padding: 1.25rem;
   margin: 1rem 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  border: 1px solid var(--san-marino-800);
   max-width: 320px;
   width: 100%;
   position: relative;
@@ -105,13 +105,11 @@ html, body {
 .contact-name {
   font-size: 1.125rem;
   font-weight: 600;
-  color: var(--san-marino-50);
   margin: 0;
 }
 
 .contact-title {
   font-size: 0.8rem;
-  color: var(--san-marino-300);
   margin: 0;
 }
 
@@ -131,13 +129,11 @@ html, body {
 .contact-label {
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--san-marino-400);
   min-width: 80px;
 }
 
 .contact-value {
   font-size: 0.875rem;
-  color: var(--san-marino-100);
   text-align: right;
   word-break: break-word;
 }
@@ -171,22 +167,22 @@ html, body {
 }
 
 .contact-btn-edit {
-  background-color: var(--san-marino-600);
+  background-color: #0f5b5b;
   color: var(--san-marino-50);
 }
 
 .contact-btn-edit:hover {
-  background-color: var(--san-marino-500);
+background-color: hsl(180, 85%, 25%);
   transform: translateY(-1px);
 }
 
 .contact-btn-delete {
-  background-color: rgba(220, 38, 38, 0.8);
+  background-color: #af3800;
   color: white;
 }
 
 .contact-btn-delete:hover {
-  background-color: rgba(220, 38, 38, 0.9);
+  background-color: hsl(19, 100%,40%);
   transform: translateY(-1px);
 }
 
