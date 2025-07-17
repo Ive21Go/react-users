@@ -1,13 +1,196 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--san-marino-50);
+  background-color: var(--san-marino-950);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --san-marino-50: #f2f7fc;
+  --san-marino-100: #e2ecf7;
+  --san-marino-200: #ccdef1;
+  --san-marino-300: #aacae6;
+  --san-marino-400: #81aed9;
+  --san-marino-500: #6393ce;
+  --san-marino-600: #4f7ac1;
+  --san-marino-700: #4568b0;
+  --san-marino-800: #3d5590;
+  --san-marino-900: #354973;
+  --san-marino-950: #242e47;
+  
+  /* App Color Scheme Variables */
+  --primary-color: var(--san-marino-600);
+  --primary-rgb: 79, 122, 193;
+  --background-primary: var(--san-marino-950);
+  --background-secondary: var(--san-marino-900);
+  --text-primary: var(--san-marino-50);
+  --text-secondary: var(--san-marino-200);
+  --text-tertiary: var(--san-marino-400);
+  --border-color: var(--san-marino-700);
+  --warning-color: #ffc107;
+  --border-radius: 8px;
+}
+/* Layout Overflow and Scrolling Fixes */
+html, body {
+    overflow-y: hidden;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+    height: 100vh;
+    overflow: hidden;
 }
+/* Contact Card styles */
+.contact-card {
+  background-color: var(--san-marino-900);
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid var(--san-marino-800);
+  max-width: 320px;
+  width: 100%;
+  position: relative;
+}
+
+.contact-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--san-marino-800);
+}
+
+.contact-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--san-marino-800);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.contact-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--san-marino-50);
+  margin: 0;
+}
+
+.contact-title {
+  font-size: 0.8rem;
+  color: var(--san-marino-300);
+  margin: 0;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--san-marino-400);
+  min-width: 80px;
+}
+
+.contact-value {
+  font-size: 0.875rem;
+  color: var(--san-marino-100);
+  text-align: right;
+  word-break: break-word;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--san-marino-800);
+}
+
+.contact-btn {
+  flex: 1;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-btn-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.contact-btn-edit {
+  background-color: var(--san-marino-600);
+  color: var(--san-marino-50);
+}
+
+.contact-btn-edit:hover {
+  background-color: var(--san-marino-500);
+  transform: translateY(-1px);
+}
+
+.contact-btn-delete {
+  background-color: rgba(220, 38, 38, 0.8);
+  color: white;
+}
+
+.contact-btn-delete:hover {
+  background-color: rgba(220, 38, 38, 0.9);
+  transform: translateY(-1px);
+}
+
+.contact-btn:active {
+  transform: translateY(0);
+}
+
