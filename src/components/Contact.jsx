@@ -1,9 +1,11 @@
-const Contact = ({name, title, email, phone, avatar, onEdit, onDelete }) => {
+const Contact = ({id, name, title, email, phone, avatar, onEdit, onDelete }) => {
 
     const handleEdit = () => {
+        onEdit({id, name, title, email, phone, avatar});
     };
 
     const handleDelete = () => {
+        onDelete(id);
     };
 
     return (
