@@ -1,7 +1,7 @@
-const Contact = ({id, name, title, email, phone, avatar, onEdit, onDelete }) => {
+const Contact = ({id, name, title, email, phone, onEdit, onDelete }) => {
 
     const handleEdit = () => {
-        onEdit({id, name, title, email, phone, avatar});
+        onEdit({id, name, title, email, phone});
     };
 
     const handleDelete = () => {
@@ -13,7 +13,7 @@ const Contact = ({id, name, title, email, phone, avatar, onEdit, onDelete }) => 
             <div className="contact-header">
                 <div className="contact-avatar">
                     <img 
-                        src={`/assets/images/avatar-${avatar}.svg`} 
+                        src={`/assets/images/avatar-account.svg`} 
                         alt="Contact avatar"
                         className="contact-avatar-img"
                     />
