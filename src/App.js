@@ -11,10 +11,10 @@ function App() {
   useEffect(() => {
 
     setContacts([
-      { id: '01', name: 'John Doe', title: 'Software Engineer', email: 'jone@done.com', phone: '123-456-7890', avatar: 'male' },
-      { id: '02', name: 'Doe Juan', title: 'Software Engineer', email: 'jone2@done.com', phone: '123-456-90', avatar: 'female' },
-      { id: '03', name: 'Marie', title: 'Software Engineer', email: 'marie@done.com', phone: '123-6-7890', avatar: 'female' },
-      { id: '04', name: 'Pedrito', title: 'Software Engineer', email: 'ejemplo@done.com', phone: '3-456-7890', avatar: 'account' }
+      { id: '01', name: 'John Doe', title: 'Software Engineer', email: 'jone@done.com', phone: '123-456-7890'},
+      { id: '02', name: 'Doe Juan', title: 'Software Engineer', email: 'jone2@done.com', phone: '123-456-90'},
+      { id: '03', name: 'Marie', title: 'Software Engineer', email: 'marie@done.com', phone: '123-6-7890'},
+      { id: '04', name: 'Pedrito', title: 'Software Engineer', email: 'ejemplo@done.com', phone: '3-456-7890'}
     ])
   }, []);
 
@@ -66,7 +66,6 @@ function App() {
                     title={contact.title}
                     email={contact.email}
                     phone={contact.phone}
-                    avatar={contact.avatar}
                     onDelete={deleteContact}
                     onUpdate={updateContact}
                   />
@@ -78,7 +77,6 @@ function App() {
           <div className="modal-dialog">
             <div className="modal-content">
 
-
               <div className="modal-header">
                 <h5 className="modal-title" id="registroModalLabel">Registro de Usuario</h5>
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
@@ -88,20 +86,24 @@ function App() {
                 <div className="modal-body">
 
                   <div className="mb-3">
-                    <label for="nombreUsuario" className="form-label">Nombre</label>
+                    <label htmlFor="nombreUsuario" className="form-label">Name</label>
                     <input type="text" className="form-control" id="nombreUsuario" required />
                   </div>
 
                   <div className="mb-3">
-                    <label for="emailUsuario" className="form-label">Correo electrónico</label>
+                    <label htmlFor="title" className="form-label">Title</label>
+                    <input type="text" className="form-control" id="title" required />
+                  </div>
+
+                  <div className="mb-3">
+                    <label htmlFor="emailUsuario" className="form-label">Email</label>
                     <input type="email" className="form-control" id="emailUsuario" required />
                   </div>
 
                   <div className="mb-3">
-                    <label for="passwordUsuario" className="form-label">Contraseña</label>
-                    <input type="password" className="form-control" id="passwordUsuario" required />
+                    <label htmlFor="Celphone" className="form-label">Phone</label>
+                    <input type="text" className="form-control" id="phone" required />
                   </div>
-
                 </div>
 
                 <div className="modal-footer">
