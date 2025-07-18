@@ -14,11 +14,7 @@ function App() {
   useEffect(() => {
 
     setContacts([
-      { id: '01', name: 'John Doe', title: 'Software Engineer', email: 'jone@done.com', phone: '123-456-7890' },
-      { id: '02', name: 'Doe Juan', title: 'Software Engineer', email: 'jone2@done.com', phone: '123-456-90' },
-      { id: '03', name: 'Marie', title: 'Software Engineer', email: 'marie@done.com', phone: '123-6-7890' },
-      { id: '04', name: 'Pedrito', title: 'Software Engineer', email: 'ejemplo@done.com', phone: '3-456-7890' }
-    ])
+      { id: '01', name: 'Nadia Ivette Godinez Zamora', title: 'Software Development Engineer', email: 'nadiaIvette.Godinez@Solera.com', phone: '000000000' }    ])
   }, []);
 
   const modalRef = useRef();
